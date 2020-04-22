@@ -16,7 +16,6 @@ export class AppComponent  {
   jurusan : string;
   deskripsi: string;
   Input(){
-    this.router.navigate(['/list',this.jurusan,this.deskripsi]);
-
+    this.router.navigate(['/list',this.jurusan, this.deskripsi]);
   }
 }

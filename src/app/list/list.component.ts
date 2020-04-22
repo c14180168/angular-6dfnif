@@ -11,10 +11,14 @@ export class ListComponent implements OnInit {
   constructor(private route : ActivatedRoute) { }
   i:number;j:number;
   list: String[];
+  jur : string;
+  des : string;
   ngOnInit() {
     let cek = this.route.snapshot.paramMap.get('jur');
+    this.jur = cek;
     let cek2 = this.route.snapshot.paramMap.get('des');
-    this.list.push(cek);
-    this.list.push(cek2);
+    this.des = cek2;
+    this.list.push(this.jur);
+    this.list.push(this.des);
   }
 }
